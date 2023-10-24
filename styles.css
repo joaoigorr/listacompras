@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: rgb(199, 233, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(0, 124, 128);
+    font-size: large;
+    font-weight: 700;
+
+}
+
+.container {
+    border: 2px;
+    padding: 30px 40px;
+    min-width: 500px;
+}
+
+.novo-item-container{
+    background-color: rgb(200, 255, 255);
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(200,200,200);
+    display: flex;
+}
+
+.novo-item-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid rgb(0, 124, 128);
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.novo-item-container input:focus {
+    outline-color:rgb(199, 233, 245);
+}
+
+.novo-item-button {
+    flex: 1;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 200;
+    background-color: rgb(0, 124, 128);
+    color: white;
+    cursor: pointer;  
+}
+
+.novo-item-button:hover {
+    background-color: white;
+    color: rgb(0, 124, 128);
+}
+
+
+.itens-container {
+    background-color: rgb(200, 255, 255);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(200,200,200);
+    margin-top: 40px;
+    
+}
+
+.itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    padding: auto;
+    color: rgb(0, 124, 128);
+    font-size: large;
+
+}
+
+.itens i {
+    color: white;
+    background-color: rgb(0, 124, 128) ;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.itens i:hover {
+    background-color: red;
+    color: white ;
+    cursor: pointer;
+}
+
+
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red
+}
+
