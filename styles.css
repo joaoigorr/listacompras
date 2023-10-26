@@ -3,16 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-    
+    font-weight: 400;   
 }
 
 body {
     background: rgb(199, 233, 245);
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .titulo {
@@ -28,9 +26,7 @@ body {
 .container {
     border: 2px;
     padding: 30px 40px;
-    max-width: 450px;
-    
-    
+    max-width: 480px;
 }
 
 .novo-item-container{
@@ -39,24 +35,27 @@ body {
     border-radius: 5px;
     box-shadow: 0 15px 30px rgb(200,200,200);
     display: flex;
-    
 }
 
 .novo-item-container input {
-    flex: 3;
     border: 2px solid rgb(0, 124, 128);
     border-radius: 5px;
     padding: 10px;
-
-
 }
 
 .novo-item-container input:focus {
     outline-color:rgb(199, 233, 245);
 }
 
+.novo-preco-item-input {
+    border: 2px solid rgb(0, 124, 128);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    max-width: 75px;
+}
+
 .novo-item-button {
-    flex: 3;
     margin-left: 10px;
     padding: 10px;
     border: none;
@@ -78,6 +77,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 15px 30px rgb(200,200,200);
     margin-top: 10px;
+    width: 100%;
     
 }
 
@@ -90,8 +90,8 @@ body {
     padding: auto;
     color: rgb(0, 124, 128);
     font-size: large;
-
 }
+
 .itens-add {
         display: flex;
         align-items: center;
@@ -101,6 +101,13 @@ body {
         font-size: small;
         font-weight: 700;
 }
+
+.itens p {
+    color: rgb(0, 124, 128);
+    padding: 8px;
+    text-align: center;
+}
+
 .itens i {
     color: white;
     background-color: rgb(0, 124, 128) ;
@@ -113,7 +120,6 @@ body {
     color: white ;
     cursor: pointer;
 }
-
 
 .error {
     border: 2px solid red !important;
@@ -128,3 +134,12 @@ body {
     color: red
 }
 
+table {
+    color: rgb(0, 124, 128);
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+}
